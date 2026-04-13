@@ -1,0 +1,148 @@
+/* Full page gradient */
+.page-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6, #e0e7ff);
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+/* Container centers the card */
+.container {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Card styling */
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid */
+.card-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  resize: vertical;
+}
+.label { display:block; font-weight:600; margin-bottom:8px; color:#0b1726; padding:10px }
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.btn.primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #2563eb;
+}
+
+.btn.ghost {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.btn.ghost:hover {
+  background-color: #e5e7eb;
+}
+
+/* Progress Bar */
+.progress-wrap {
+  height: 1rem;
+  background: #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+/* File input box */
+.file-select-box {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Results section */
+.results {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+}
+.result-json {
+  background: #fbfdff;
+  padding: 12px;
+  border-radius: 8px;
+  max-height: 420px;
+  overflow: auto;
+  border: 1px solid rgba(11,103,255,0.04);
+  color: #06243c;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.choose-file-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  background-color: white;
+  color: #3b82f6;
+  border: 1.5px solid #3b82f6;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.choose-file-btn:hover {
+  background-color: #eff6ff;
+}
+
+.file-name-display {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e40af;
+}
